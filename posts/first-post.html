@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- EDIT: post title (shows in the browser tab and in search results) -->
+    <title>
+      Why are people using AI if they say they don't trust it? · Mehrasa Amiri
+      Besheli
+    </title>
+    <meta
+      name="description"
+      content="People who said they don't trust AI used our news-reading extension as much as everyone else. Here are my hypotheses for why."
+    />
+    <meta
+      property="og:title"
+      content="Why are people using AI if they say they don't trust it?"
+    />
+    <meta
+      property="og:description"
+      content="People who said they don't trust AI used our news-reading extension as much as everyone else. Here are my hypotheses for why."
+    />
+    <meta property="og:type" content="article" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- Two-per-row grid for the hypotheses: image on top, heading + text underneath.
+     You can move this into style.css later if you want to reuse it in other posts. -->
+    <style>
+      /* Post width and text size: change these two numbers to adjust */
+      .article {
+        max-width: 820px;
+      }
+      .article-body {
+        font-size: 1.05rem;
+      }
+      .article-body .lead {
+        font-size: 1.15rem;
+      }
+
+      .hypothesis-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2.5rem 2rem;
+        margin: 2rem 0 2.5rem;
+      }
+      .hypothesis-card {
+        margin: 0;
+      }
+      /* Shown at a fixed small height so the source pixels stay sharp on
+         high-resolution screens. "multiply" blends the off-white image
+         background into the page. */
+      .hypothesis-card img {
+        display: block;
+        height: 190px;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+        margin: 0 auto;
+        mix-blend-mode: multiply;
+      }
+      .hypothesis-card h3 {
+        margin: 1rem 0 0.4rem;
+      }
+      .hypothesis-card p {
+        margin: 0;
+      }
+      /* On phones, stack them one per row */
+      @media (max-width: 600px) {
+        .hypothesis-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Thin yellow bar at the top that fills as you read -->
+    <div class="read-progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="../index.html">Mehrasa Amiri Besheli</a>
+        <nav>
+          <ul class="nav">
+            <li><a href="../index.html">About</a></li>
+            <li><a href="../index.html#publications">Publications</a></li>
+            <li><a href="../blog.html" aria-current="page">Blog</a></li>
+            <li><a href="../cv.html">CV</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="article">
+        <!-- ===================== TITLE ===================== -->
+        <header class="article-header">
+          <h1>Why are people using AI if they say they don't trust it?</h1>
+
+          <!-- EDIT the date. The read time is calculated automatically. -->
+          <p class="article-meta">
+            <time datetime="2026-06-06">June 6, 2026</time> ·
+            <span data-read-time>5 min read</span>
+          </p>
+        </header>
+
+        <!-- ===================== BODY ===================== -->
+        <div class="article-body">
+          <p class="lead">
+            In one of our studies on
+            <a href="https://dl.acm.org/doi/pdf/10.1145/3816046.3816213"
+              >SPARC</a
+            >, a browser extension that helps people read the news with an AI
+            assistant, we noticed something surprising.
+            <mark
+              >People who said they don't trust AI in general still used the
+              extension to learn more about the news they were reading.</mark
+            >
+            They used it about as much as everyone else, and they even asked the
+            same kinds of questions. Why?
+          </p>
+
+          <p>
+            A caveat first: only about 11% of our participants said they didn't
+            trust AI at all, and everyone was recruited online through Prolific.
+            So treat this as an interesting pattern, not a final answer.
+          </p>
+
+          <h2>I have a couple of hypotheses</h2>
+
+          <div class="hypothesis-grid">
+            <figure class="hypothesis-card">
+              <img
+                src="../images/blog/2026Oct6/trust-study-design.png"
+                alt="Sketch of a large eye watching a person at a desk, with a speech bubble that says “Freely?”"
+              />
+              <h3>1. Study design</h3>
+              <p>
+                Even though participants were told to use the extension freely,
+                they may have felt obligated to use it more. But that alone
+                doesn't explain why the amount and type of use were similar
+                across trust levels.
+              </p>
+            </figure>
+
+            <figure class="hypothesis-card">
+              <img
+                src="../images/blog/2026Oct6/trust-news-domain.png"
+                alt="Sketch of a newspaper under a magnifying glass, surrounded by question marks"
+              />
+              <h3>2. The domain of the task at hand</h3>
+              <p>
+                Reading the news is exploratory. Participants may simply have
+                been curious and wanted more information, and using AI for that
+                is low-risk.
+              </p>
+            </figure>
+
+            <figure class="hypothesis-card">
+              <img
+                src="../images/blog/2026Oct6/trust-dynamic.png"
+                alt="Line chart of trust over time, rising from “don’t trust” before using the tool to “engaged” during use"
+              />
+              <h3>3. The design of the extension</h3>
+              <p>
+                Maybe they don't trust AI in general, but specific features of
+                SPARC helped them engage. This suggests trust changes during an
+                interaction, rather than being something we can capture by
+                asking about it beforehand.
+              </p>
+            </figure>
+
+            <figure class="hypothesis-card">
+              <img
+                src="../images/blog/2026Oct6/trust-measurement.png"
+                alt="Sketch of an irregular shape labeled competence, reliability, familiarity, intent and risk, next to a ruler for a rating scale"
+              />
+              <h3>4. Trust measurement</h3>
+              <p>
+                A single survey question can't fully capture something as
+                complex as trust.
+              </p>
+            </figure>
+
+            <figure class="hypothesis-card">
+              <img
+                src="../images/blog/2026Oct6/trust-other-factors.png"
+                alt="Sketch of a face surrounded by icons for past, mood, traits and experience"
+              />
+              <h3>5. Other factors</h3>
+              <p>
+                Personal characteristics, past experiences, and other things we
+                didn't measure.
+              </p>
+            </figure>
+          </div>
+
+          <h2>What I take from this</h2>
+
+          <p>
+            Each of these could explain part of the result, and I think they're
+            all worth exploring further. But thinking through them led me to a
+            broader idea.
+            <mark
+              >Rather than treating trust as the goal, we should focus on
+              designing credible agents</mark
+            >: tools that show where their answers come from, so people can
+            judge them for themselves.
+          </p>
+        </div>
+
+        <!-- ===================== END OF POST ===================== -->
+        <footer class="article-footer">
+          <a class="back-link" href="../blog.html">← All posts</a>
+        </footer>
+      </article>
+    </main>
+
+    <footer>
+      <div class="container">© 2026 Mehrasa Amiri Besheli</div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

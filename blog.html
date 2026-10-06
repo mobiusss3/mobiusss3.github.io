@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog · Mehrasa Amiri Besheli</title>
+    <meta
+      name="description"
+      content="Writing by Mehrasa Amiri Besheli on HCI, conversational AI, and life as a PhD student."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="index.html">Mehrasa Amiri Besheli</a>
+        <nav>
+          <ul class="nav">
+            <li><a href="index.html">About</a></li>
+            <li><a href="index.html#publications">Publications</a></li>
+            <li><a href="blog.html" aria-current="page">Blog</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1 class="page-title">Sharing my thoughts</h1>
+
+      <!-- ===================== POST LIST =====================
+         NEWEST AT THE TOP. For each new post:
+         1. Copy posts/first-post.html, rename it (e.g. posts/my-second-post.html)
+         2. Copy one <article class="post-card"> below and update the link, date,
+            title, subtitle and (optional) thumbnail.
+         Delete the <figure> if the post has no thumbnail.
+    ====================================================== -->
+      <section class="post-list">
+        <article class="post-card">
+          <div>
+            <p class="post-meta">
+              <time datetime="2026-06-06">June 6, 2026</time> · 1 min read
+            </p>
+            <h2>
+              <a href="posts/first-post.html"
+                >Why are people using AI if they say they don't trust it?</a
+              >
+            </h2>
+            <p class="post-subtitle">
+              People who said they don't trust AI used our news-reading
+              extension as much as everyone else. Here are my hypotheses for
+              why.
+            </p>
+          </div>
+          <!-- Optional thumbnail: <figure class="post-thumb"><img src="images/blog/cover.jpg" alt=""></figure> -->
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">© 2026 Mehrasa Amiri Besheli</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
