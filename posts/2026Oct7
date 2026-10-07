@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>What is salt made of? · Mehrasa Amiri Besheli</title>
+    <meta
+      name="description"
+      content="On how I lost my curiosity to competition, and how a PhD gave it back."
+    />
+    <meta property="og:title" content="What is salt made of?" />
+    <meta
+      property="og:description"
+      content="On how I lost my curiosity to competition, and how a PhD gave it back."
+    />
+    <meta property="og:type" content="article" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="read-progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="../index.html">Mehrasa Amiri Besheli</a>
+        <nav>
+          <ul class="nav">
+            <li><a href="../index.html">About</a></li>
+            <li><a href="../index.html#publications">Publications</a></li>
+            <li><a href="../blog.html" aria-current="page">Blog</a></li>
+            <li><a href="../cv.html">CV</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="article">
+        <header class="article-header">
+          <h1>What is salt made of?</h1>
+          <p class="article-subtitle">
+            How I lost my curiosity to competition, and found it again in a
+            quiet corner of science
+          </p>
+          <p class="article-meta">
+            <time datetime="2026-10-07">Oct 7, 2026</time> ·
+            <span data-read-time>1 min read</span>
+          </p>
+        </header>
+
+        <div class="article-body">
+          <figure class="article-figure">
+            <img
+              src="../images/blog/2026Oct7/childhood.jpg"
+              alt="A three-year-old girl in white pajamas sitting barefoot on a chair at a wooden desk, holding a pencil over a large open book and laughing with her tongue out"
+            />
+            <figcaption>
+              Me at three, very busy doing important work.
+            </figcaption>
+          </figure>
+
+          <p class="lead">
+            This is me, when I was three years old. I'm copying my older sister,
+            who I had watched sit at this same desk with a pen and a big book,
+            and I'm having the time of my life pretending to know things.
+          </p>
+
+          <p>
+            I didn't need to understand anything to enjoy it. The pen, the
+            pages, the feeling of being someone who studies: that was enough.
+          </p>
+
+          <p>
+            As I got a little older, the pretending turned into questions. I
+            once asked my dad what salt was made of. In my head, a grain of salt
+            was the smallest thing in the world, and I wanted to know what could
+            possibly be inside something that small. What is even smaller than
+            the smallest thing?
+          </p>
+
+          <p>
+            He literally tried to explain NaCl to me. I was six at the time, and
+            of course I didn't understand. But that didn't stop me from asking
+            more weird questions.
+          </p>
+
+          <p>
+            I loved school. Yes, I was a nerd. But then the competition started.
+            There was an exam to decide whether I would get into the school for
+            gifted students, and somewhere around that exam, something changed.
+            I don't remember enjoying anything after that. Solving a math
+            problem stopped feeling good. It just felt necessary. I wasn't
+            learning anymore; I was trying to survive.
+          </p>
+
+          <p>
+            In high school, no matter what I did, I could look around and see
+            thirty other people doing exactly the same thing. Nothing I did felt
+            special. I got my head so deep into the competition that I forgot
+            what the point was.
+          </p>
+
+          <p class="pullquote">
+            I wasn't asking what salt was made of anymore. I was asking whether
+            I was better than the person next to me.
+          </p>
+
+          <p>
+            That mindset followed me all the way through my bachelor's degree. I
+            hated almost every course. The only moments I enjoyed were the rare
+            ones when I was alone with a homework problem, with no way of
+            knowing whether I was doing better or worse than anyone else. Just
+            me and the problem.
+          </p>
+
+          <p>
+            Starting my PhD helped me change my mindset. Research is a place
+            where you have to think on your own. Of course you still compare
+            your work to others', but everyone is working on their own small
+            corner of science, and nobody is solving the same problem at the
+            same desk as you.
+          </p>
+
+          <p>
+            For the first time in a long time, I found myself thinking:
+            <em
+              >hmm, maybe it's not so bad, sitting in this corner and
+              reading.</em
+            >
+          </p>
+
+          <p>
+            I think that three-year-old was onto something. She didn't know
+            anything, and she didn't care who knew more. She just wanted to be
+            at the desk. I'm slowly finding my way back to her.
+          </p>
+        </div>
+
+        <footer class="article-footer">
+          <a class="back-link" href="../blog.html">← All posts</a>
+        </footer>
+      </article>
+    </main>
+
+    <footer>
+      <div class="container">© 2026 Mehrasa Amiri Besheli</div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
